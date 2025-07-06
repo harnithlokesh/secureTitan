@@ -142,9 +142,8 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
-  background: rgba(179, 136, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(179, 136, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
 }
 
 /* Form Styling */
