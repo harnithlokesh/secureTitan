@@ -1,0 +1,97 @@
+/* Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background: rgba(230, 220, 255, 0.4); /* soft transparent purple */
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(180, 150, 255, 0.2);
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  filter: drop-shadow(0 0 12px rgba(179, 136, 255, 0.5));
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin-left: 60px;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3b0066; /* 🌑 Dark Purple */
+  font-weight: 500;
+  padding-bottom: 3px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a:hover {
+  color: #843dff; /* Violet hover */
+  border-bottom: 2px solid #843dff;
+}
+
+/* User Options (Right Side) */
+.user-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  color: #3b0066; /* Changed from gray to dark purple */
+}
+
+.user-options span:hover {
+  color: #843dff;
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+  }
+
+  .user-options {
+    margin-top: 10px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
