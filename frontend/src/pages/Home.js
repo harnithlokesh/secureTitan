@@ -2,9 +2,11 @@ import React from 'react';
 import './Home.css';
 
 const Home = () => {
-  return (
+ return (
     <div className="home-container">
-      <h1>Welcome to secureTitan</h1>
+     <h1 className="hero-heading" style={{ color: '#D3A4F3'}}>
+    Welcome to SecureTitan
+    </h1>
       <p>Your cybersecurity knowledge hub and future consultancy partner 🛡️</p>
 
       <div className="cards-container">
